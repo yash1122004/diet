@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulking Diet Plan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Bulking Diet Plan</h1>
+
+<form id="dietForm" data-goal="bulking">
+  <label for="weight">Enter your weight (kg):</label>
+  <input type="number" id="weight" required>
+
+  <label for="height">Enter your height (cm):</label>
+  <input type="number" id="height" required>
+
+  <!-- Meals -->
+  <div class="search-container">
+    <label>Breakfast:</label>
+    <input type="text" id="breakfastSearch" placeholder="Search Poha, Upma etc.">
+    <div class="suggestions" id="breakfastSuggestions"></div>
+    <input type="hidden" id="selectedBreakfast">
+    <label>Enter grams:</label>
+    <input type="number" id="breakfastGrams">
+  </div>
+
+  <div class="search-container">
+    <label>Lunch:</label>
+    <input type="text" id="lunchSearch" placeholder="Search Dal, Bhaji etc.">
+    <div class="suggestions" id="lunchSuggestions"></div>
+    <input type="hidden" id="selectedLunch">
+    <label>Enter grams:</label>
+    <input type="number" id="lunchGrams">
+  </div>
+
+  <div class="search-container">
+    <label>Dinner:</label>
+    <input type="text" id="dinnerSearch" placeholder="Search Khichdi, Poli etc.">
+    <div class="suggestions" id="dinnerSuggestions"></div>
+    <input type="hidden" id="selectedDinner">
+    <label>Enter grams:</label>
+    <input type="number" id="dinnerGrams">
+  </div>
+
+  <button type="submit">Generate My Plan</button>
+</form>
+
+<script src="meals.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
